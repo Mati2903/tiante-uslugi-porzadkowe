@@ -31,6 +31,7 @@ const Contact = () => {
 				href="https://www.facebook.com/tiantemycieokien/"
 				className="contact__item"
 				target="_blank"
+				rel="noreferrer"
 			>
 				<MdFacebook className="contact__icon" />
 				Znajdź nas na Facebooku

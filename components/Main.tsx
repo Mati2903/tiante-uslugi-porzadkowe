@@ -5,6 +5,7 @@ const Main = () => {
 			<h3 className="main__subheader">
 				Myjemy okna, witryny sklepowe oraz inne przeszklenia
 			</h3>
+
 			<img
 				src="../assets/cleaning.png"
 				alt="akcesoria do mycia witryn"
