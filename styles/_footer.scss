@@ -1,0 +1,31 @@
+.footer {
+	border-top: 2px solid #777;
+	height: 8vh;
+	width: 100%;
+	background-color: #333;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	&__copyright {
+		color: $color-orange;
+		font-size: 1.5rem;
+	}
+}
+
+//-------------tablets --------------
+@media screen and (min-width: 768px) {
+	.footer {
+		width: 100vw;
+		&__copyright {
+			font-size: 2rem;
+		}
+	}
+}
+@media screen and (min-width: 1025px) {
+	.footer {
+		height: 6vh;
+		&__copyright {
+			font-size: 1.5rem;
+		}
+	}
+}

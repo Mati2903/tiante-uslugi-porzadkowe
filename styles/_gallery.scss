@@ -1,0 +1,89 @@
+.slider {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	min-height: 100vh;
+	padding-top: $padding-top;
+	&__header {
+		text-align: center;
+		font-size: $header-font-size;
+		margin-bottom: 0.5rem;
+		font-weight: 700;
+	}
+	&__container {
+		height: 70vh;
+	}
+	&__arrows-container {
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+
+		.slider__arrow {
+			font-size: 2rem;
+			cursor: pointer;
+		}
+		.arrow-left:active {
+			font-size: 1.9rem;
+			margin-right: 0.05rem;
+		}
+		.arrow-right:active {
+			font-size: 1.9rem;
+			margin-left: 0.05rem;
+		}
+	}
+
+	&__image {
+		max-height: 90vh;
+	}
+}
+
+.__rcs-handle-button {
+	cursor: pointer;
+	width: 5rem !important;
+	height: 5rem !important;
+	div {
+		zoom: 130%;
+	}
+}
+
+//------------tablets-----------
+@media screen and (min-width: 768px) {
+	.slider {
+		padding-top: 8rem;
+		margin-bottom: -8rem;
+		&__header {
+			font-size: $header-font-size-tablets;
+		}
+	}
+}
+@media screen and (min-width: 1025px) {
+	.slider {
+		max-width: 1000px;
+		margin: 0 auto;
+		padding-top: $padding-top-desktop;
+		&__header {
+			font-size: $header-font-size-desktop;
+		}
+	}
+	.__rcs-handle-button {
+		cursor: pointer;
+		width: 4rem !important;
+		height: 4rem !important;
+
+		div {
+			zoom: 100%;
+			transition: 0.5s;
+		}
+		&:hover {
+			div {
+				color: $color-orange;
+			}
+		}
+		&:active {
+			div {
+				color: $color-orange;
+			}
+		}
+	}
+}

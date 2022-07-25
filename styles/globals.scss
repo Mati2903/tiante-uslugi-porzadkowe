@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:wght@400;700&display=swap");
+@import "../styles/variables";
+@import "~bootstrap/scss/bootstrap";
+@import "../styles/callBanner";
+@import "../styles/reset";
+@import "../styles/services";
+@import "../styles/contact";
+@import "../styles/footer";
+@import "../styles/gallery";
+@import "../styles/main";
+@import "../styles/nav";
+
+html,
+body {
+	padding: 0;
+	margin: 0 auto;
+	font-family: Montserrat, Calibri, Arial, sans-serif;
+	display: flex;
+	// justify-content: center;
+	background: radial-gradient(
+		circle,
+		rgba(2, 0, 36, 1) 0%,
+		rgba(255, 255, 255, 1) 0%,
+		rgb(150, 230, 243) 100%
+	);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+main {
+	max-width: 1100px;
+	border-radius: 20px;
+	background-color: rgba(255, 255, 255, 0.25);
+}
+
+@media screen and (min-width: 768px) {
+	html,
+	body {
+		overflow-x: hidden;
+		justify-content: center;
+	}
+	main {
+		margin: 0 auto;
+	}
+}

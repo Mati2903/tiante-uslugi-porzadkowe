@@ -1,0 +1,49 @@
+.call-banner {
+	position: -webkit-sticky;
+	position: sticky;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 10vh;
+	background-color: #333;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	& a {
+		width: 100%;
+		height: 100%;
+	}
+	&__icon {
+		margin-right: 1rem;
+		font-size: 3rem;
+		animation: iconMove 1.5s ease 1s infinite;
+		color: $color-orange;
+	}
+	&__number {
+		display: flex;
+		font-size: 2rem;
+		align-items: center;
+		justify-content: center;
+		text-decoration: none;
+		color: white !important;
+	}
+}
+
+@keyframes iconMove {
+	0% {
+		transform: rotate(5deg);
+	}
+	50% {
+		transform: rotate(-5deg);
+	}
+	100% {
+		transform: rotate(5deg);
+	}
+}
+
+//------------- no display for tablets and desktops -------------
+@media screen and (min-width: 768px) {
+	.call-banner {
+		display: none;
+	}
+}

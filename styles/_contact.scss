@@ -1,0 +1,72 @@
+.contact {
+	height: 90vh;
+	padding-top: $padding-top;
+	text-align: center;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	&__header {
+		font-size: $header-font-size;
+		font-weight: 700;
+		margin: 2rem 0;
+	}
+	&__subheader {
+		font-size: $subheader-font-size;
+		margin-bottom: 4rem;
+	}
+	&__item {
+		font-size: 2rem;
+		display: flex;
+		gap: 1rem;
+		margin-right: 1rem;
+		margin-bottom: 1.7rem;
+	}
+	&__icon {
+		color: $color-orange;
+	}
+	a,
+	p {
+		text-decoration: none;
+		color: #212529;
+	}
+}
+
+//-------------tablets-----------------
+@media screen and (min-width: 768px) {
+	.contact {
+		&__header {
+			padding-top: 2rem;
+			font-size: $header-font-size-tablets;
+		}
+		&__subheader {
+			font-size: $subheader-font-size-tablets;
+		}
+		&__item {
+			margin-left: 4rem;
+			margin-bottom: 3rem;
+			font-size: 2.5rem;
+			gap: 2rem;
+		}
+	}
+}
+
+@media screen and (min-width: 1025px) {
+	.contact {
+		height: 90vh;
+		max-width: 1200px;
+		margin: 0 auto;
+		padding-top: 1rem;
+		&__header {
+			font-size: $header-font-size-desktop;
+		}
+		&__subheader {
+			font-size: $subheader-font-size-desktop;
+		}
+		&__item {
+			font-size: 2rem;
+			margin-left: 20%;
+		}
+		a.contact__item:hover {
+			color: $color-orange;
+		}
+	}
+}
