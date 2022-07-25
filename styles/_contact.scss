@@ -31,6 +31,16 @@
 	}
 }
 
+//iphone 6/7/8 screen
+@media screen and (max-width: 379px) and (max-height: 680px) {
+	.contact {
+		padding-top: 4rem;
+		&__subheader {
+			margin-bottom: 2rem;
+		}
+	}
+}
+
 //-------------tablets-----------------
 @media screen and (min-width: 768px) {
 	.contact {
