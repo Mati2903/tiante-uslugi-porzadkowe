@@ -8,9 +8,11 @@
 		font-size: $header-font-size;
 		margin: 2rem 0;
 		font-weight: bold;
+		line-height: 120%;
 	}
 	&__subheader {
 		font-size: $subheader-font-size;
+		line-height: 120%;
 	}
 	&__image {
 		margin-top: 3rem;

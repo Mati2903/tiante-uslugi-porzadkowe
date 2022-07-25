@@ -11,17 +11,19 @@
 	&__subheader {
 		font-size: $subheader-font-size;
 		margin-bottom: 2rem;
+		line-height: 120%;
 	}
 	&__list-items {
 		text-align: left;
 		margin-left: 2rem;
-		font-size: 2rem;
+		font-size: 1.7rem;
 	}
 	&__list-item {
 		margin-top: 1rem;
 		display: flex;
 		align-items: center;
 		gap: 1rem;
+		line-height: 130%;
 	}
 	.services__check {
 		flex-shrink: 0;
