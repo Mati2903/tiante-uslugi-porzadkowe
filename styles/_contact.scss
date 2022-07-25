@@ -18,11 +18,15 @@
 		display: flex;
 		gap: 1rem;
 		margin-right: 1rem;
+		text-align: left;
+		line-height: 120%;
+		margin-left: 1rem;
 		margin-bottom: 1.7rem;
 		align-items: center;
 	}
 	&__icon {
 		color: $color-orange;
+		font-size: 2rem;
 	}
 	a,
 	p {
